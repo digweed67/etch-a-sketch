@@ -1,0 +1,107 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: none; 
+
+}
+
+.top {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+    font-style: italic;
+    font-size: 35px;
+    color: #ffea75;
+    height: 78px;
+    text-align: center;
+    
+}
+.trademark {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    vertical-align: middle;
+}
+
+.board {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 900px; 
+    height: 650px;
+    background-color: #d90009;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 0.5em;
+    box-shadow: 0.4em 0.4em 0 #b80008 inset, -0.4em -0.4em 0 #970007 inset; 
+}
+
+.middle {
+    display: flex; 
+    justify-content: center;
+}
+.grid {
+    
+    background-color: white;
+    width: 700px; 
+    height: 450px;
+    border-radius: 0.75em;
+    border-top: 0.4em solid #970007;
+    border-right: 0.4em solid #b80008;
+    border-bottom: 0.4em solid #b80008;
+    border-left: 0.4em solid #970007;  
+    
+  
+
+}
+    
+.bottom {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    height: 78px; 
+   
+}
+
+.color-dial {
+    background-image: radial-gradient(#bbb 4%, #fff 5%);
+    border-radius: 50%;
+    border-top: 0.4em solid #ddd;
+    border-right: 0.4em solid #bbb;
+    border-bottom: 0.4em solid #bbb;
+    border-left: 0.4em solid #ddd;
+    cursor: grab;
+    margin: 0.5em; 
+    width: 4.5em;
+    height: 4.5em;
+    
+    
+}
+
+.rainbow-dial {
+    background-image: radial-gradient(#bbb 4%, #fff 5%);
+    border-radius: 50%;
+    border-top: 0.4em solid #ddd;
+    border-right: 0.4em solid #bbb;
+    border-bottom: 0.4em solid #bbb;
+    border-left: 0.4em solid #ddd;
+    cursor: grab;
+    margin: 0.5em;
+    width: 4.5em;
+    height: 4.5em; 
+}
+
+.buttons {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center
+    
+}
