@@ -66,8 +66,8 @@ body {
 .bottom {
     display: flex; 
     justify-content: space-between;
-    align-items: center; 
-    height: 78px; 
+    align-items:center; 
+    height: 4.8em; 
    
 }
 
@@ -79,7 +79,9 @@ body {
     border-bottom: 0.4em solid #bbb;
     border-left: 0.4em solid #ddd;
     cursor: grab;
-    margin: 0.5em; 
+    margin: 0.5em;
+    margin-bottom: 2em; 
+    margin-left: 1em;
     width: 4.5em;
     height: 4.5em;
     
@@ -95,13 +97,39 @@ body {
     border-left: 0.4em solid #ddd;
     cursor: grab;
     margin: 0.5em;
+    margin-bottom: 2em;
+    margin-right: 1em;
     width: 4.5em;
     height: 4.5em; 
 }
 
-.buttons {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center
-    
+.reset-btn, .clear-btn {
+    background-color: #fff;
+    padding: 0.6em 1.8em;
+    border-radius: 1.5em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif; 
+    border-top: 0.4em solid #ddd;
+    border-right: 0.4em solid #bbb;
+    border-bottom: 0.4em solid #bbb;
+    border-left: 0.4em solid #ddd;
+    font-size: 0.9em;
+    color: #595959;
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.4s;
+
 }
+
+.reset-btn:hover,
+.clear-btn:hover {
+    background-color:#ff4d52; 
+    color: white; 
+}
+
+.color-dial:hover, 
+.rainbow-dial:hover {
+    transform: translateY(-5px);
+}
+
