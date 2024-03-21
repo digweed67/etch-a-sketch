@@ -51,7 +51,7 @@ body {
 .grid {
     
     background-color: white;
-    width: 700px; 
+    width: 750px; 
     height: 450px;
     border-radius: 0.75em;
     border-top: 0.4em solid #970007;
@@ -59,8 +59,27 @@ body {
     border-bottom: 0.4em solid #b80008;
     border-left: 0.4em solid #970007;  
     
-  
 
+}
+
+.row {
+    border: 1px solid gray; 
+    min-width: 28px;
+    min-height: 28px;
+    display: flex;
+    border: none;
+    justify-content: center; 
+    align-items: center;
+}
+
+.cols {
+    border: 1px solid gray; 
+    min-width: 28px;
+    min-height: 28px;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+     
 }
     
 .bottom {
