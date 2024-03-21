@@ -1,13 +1,19 @@
-// create a 16x16 grid using JS. 
+// create a grid using JS. 
 function createGrid (numRows = 15, numCols = 26){
     const grid = document.querySelector(".grid");
+    const containerWidth = grid.clientWidth; 
+    const containerHeight = grid.clientHeight; 
+    const squareSizeWidth = containerWidth / numCols; 
+    const squareSizeHeight = containerHeight / numRows; 
     for (let i = 0; i < numRows; i++) {
         const row = document.createElement("div");
         row.classList.add("row");
         for (let j = 0; j < numCols; j++) {
-            const cols =document.createElement("div");
-            cols.classList.add("cols");
-            row.appendChild(cols);
+            const square = document.createElement("div");
+            square.classList.add("square");
+            square.style.width = squareSizeWidth + 'px';
+            square.style.height = squareSizeHeight + 'px'; 
+            row.appendChild(square);
         }
     grid.appendChild(row);
     }
@@ -57,6 +63,19 @@ function clearGrid() {
 
 
 clearGrid();
+
+// reset Size 
+
+const resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", resetSize); 
+
+function resetSize () {
+    let userInput = prompt("Please enter the number of squares you wish (below 100)"); 
+    if (userInput > 100) {
+        alert("Please make sure your number is below 100");
+    }
+
+}
  
 
 

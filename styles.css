@@ -72,7 +72,7 @@ body {
     align-items: center;
 }
 
-.cols {
+.square {
     border: 1px solid gray; 
     min-width: 28px;
     min-height: 28px;
